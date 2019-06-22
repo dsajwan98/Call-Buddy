@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+            Call Buddy
+        </title>
+        <link rel="stylesheet" href="mobile.css"/>
+        <script type="text/javascript" src="mobile script.js"></script>
+
+    </head>
+    <body onload="hideRcont()">
+    <center>
+        <div id="dialer-container" class="mobile-body">
+            <div><h1 id="header-contact">Contacts</h1></div>
+            <div id="dialer-upper-section" class="side-border">
+                <div ><img class="icon" src="images/telephone.png" alt="telephone-icon"><p class="contact-info">Name1<br>8456157845</p></div>
+                <div ><img class="icon" src="images/telephone.png" alt="telephone-icon"><p class="contact-info">Name2<br>8456157885</p></div>
+                <div ><img class="icon" src="images/telephone.png" alt="telephone-icon"><p class="contact-info">Name3<br>8456157895</p></div>
+            </div>
+            
+            <div id="icon-div" class="side-border">
+                <div><img id="call-icon" class="icon" src="images/call.png" alt="call-icon" width="20px" height='20px'></div>
+                <div><input id="number-area" type="text"></div>
+            </div>
+            <div>
+                <table id="dialer-table">
+                    <tr>
+                        <td>1</td><td>2</td><td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td><td>5</td><td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td><td>8</td><td>9</td>
+                    </tr>
+                    <tr>
+                        <td>*</td><td>0</td><td>#</td>
+                    </tr>
+                </table>
+            </div>
+         </div>
+    </center>
+    <br><br><br><br>
+
+
+
+    <center>
+        <div id="response-container" class="mobile-body">
+        <div id="outer-line" >
+            <div>
+                <img id="user-icon" src="images/user.png" alt="user-icon"/>
+                <div id='resp-name' class="resp-info">Name</div>
+                <div id='resp-number' class="resp-info">894565322</div>
+            </div>
+            <div>
+                <button id='btnOk' class="resp-btn">OK</button>
+                <button id='btnCancel' class="resp-btn">Cancel</button>
+            </div>    
+        </div>
+
+        </div>    
+    </center>
+
+    </body>
+</html>
