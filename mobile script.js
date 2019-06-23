@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#response-container").css("display","none");
     $("#number-area").attr("disabled", "disabled");
-    
+    var interval;
 
     $('#call-icon').click(function(){
         if($('#number-area').val().length>0){
@@ -18,12 +18,15 @@ $(document).ready(function(){
     $('#btnCancel').click(function(){
         $("#response-container").css("display","none");
         $("#dialer-container").css("display","block");
+        clearInterval(interval);
+        $('#call-seconds1').text("0");
+        $("#call-seconds2").css("display","block");
     });
 
     $('#btnOk').click(function(){
         $("#call-timer").css("display","block");
-
-        //setInterval(function(){},1000)
+        
+        interval=setInterval(increment,1000);
     });
 
     $('.contact-click').click(function(){
@@ -38,5 +41,11 @@ $(document).ready(function(){
         $("#response-container").css("display","block");
         $("#dialer-container").css("display","none");
         $("#call-timer").css("display","none");
+    }
+
+    function increment(){
+        $('#call-seconds1').text(parseInt($('#call-seconds1').text())+1);
+        if(parseInt($('#call-seconds1').text())>9)
+            $("#call-seconds2").css("display","none"); 
     }
 });
