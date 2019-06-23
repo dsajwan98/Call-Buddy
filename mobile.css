@@ -1,14 +1,19 @@
-.icon{
-    width: 20px;
-    height: 20px;
-    float: left;
+#btnOk{
+    background-color: green;
     position: relative;
-    left: 7px;
+    top:180px;
+    right: 20px;
 }
 
+#btnCancel{
+    background-color:red;
+    position: relative;
+    top:180px;
+    left:20px;
+}
 
 #call-icon{
-    margin-top: 80px;
+    margin-top: 66px;
     padding-bottom: 6%;
     height: 60px;
     width: 60px;
@@ -16,6 +21,24 @@
     top: 20%;
     right: 25%;
     bottom:8%;
+}
+
+.contact-click{
+    height: 8%;
+    padding: 0%;
+}
+
+.contact-info-name{
+    margin:0;
+    height: 20px;
+
+}
+
+.contact-info-number{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    height: 50%;
+    margin: 0%;
 }
 
 #dialer-table{
@@ -34,37 +57,21 @@
     border-width: 0px 1px 1px 1px;
 }
 
-#icon-div{
-    width:95%
-    
-}
-
-.contact-info{
-    margin:0;
-}
-
-#number-area{
-    width: 99%;
-    height: 8%;
-    margin:0;
-    border: 0;
-    padding: 0%;
-    font-size: 150%;
-}
-
-.side-border{
-    border-style: solid;
-    border-width:0px 1px 0px 1px;
-    border-color: black;
-}
-
 #dialer-upper-section{
     background-color: rgba(26, 177, 106, 0.74);
     width: 95%;
 }
+
 #dialer-container{
     height:83%;
     margin-top: 4%;
+}
+
+#dialer-table td{
+    border-style: solid;
+    border-width: 1px;
+    margin: 0%;
+    border-color: grey;
 }
 
 #header-contact{
@@ -80,13 +87,92 @@
     border-color: black;
 }
 
+#icon-div{
+    width:95%;
+    
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: relative;
+    left: 7px;
+}
+
+#key10{
+    border-bottom-left-radius: 42px;
+}
+
+#key12{
+    border-bottom-right-radius: 42px;
+}
+
 .mobile-body{
     background-color: rgba(0, 0, 0, 0.459);
     color: rgba(240, 247, 242, 0.932);
-    width:23%;
+    width:20%;
     border-radius: 42px;
     border-style: double;
 }
+
+#number-area{
+    width: 100%;
+    height: 8%;
+    margin:0;
+    border-style: solid;
+    border-color: gray;
+    padding: 0%;
+    font-size: 150%;
+    text-align: center;
+}
+
+#outer-line{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius:42px;
+    margin: 7px 7px 4px 5px;
+    width:96%;
+    height: 96%;
+
+}
+
+
+.resp-btn{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.resp-info{
+    font-size: 25px;
+    
+}
+
+.side-border{
+    border-style: solid;
+    border-width:0px 1px 0px 1px;
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body{
     background-color: rgba(10, 77, 62, 0.418);
@@ -105,38 +191,5 @@ body{
     height: 30%;
 }
 
-#outer-line{
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius:42px;
-    margin: 7px 7px 4px 5px;
-    width:96%;
-    height: 96%;
 
-}
 
-#btnOk{
-    background-color: red;
-    position: relative;
-    top:180px;
-    right: 20px;
-}
-
-#btnCancel{
-    background-color: green;
-    position: relative;
-    top:180px;
-    left:20px;
-}
-
-.resp-btn{
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-}
-
-.resp-info{
-    font-size: 25px;
-    
-}

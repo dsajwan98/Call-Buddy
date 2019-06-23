@@ -4,17 +4,22 @@
             Call Buddy
         </title>
         <link rel="stylesheet" href="mobile.css"/>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+        </script>
         <script type="text/javascript" src="mobile script.js"></script>
 
     </head>
-    <body onload="hideRcont()">
+    <body>
     <center>
         <div id="dialer-container" class="mobile-body">
             <div><h1 id="header-contact">Contacts</h1></div>
             <div id="dialer-upper-section" class="side-border">
-                <div ><img class="icon" src="images/telephone.png" alt="telephone-icon"><p class="contact-info">Name1<br>8456157845</p></div>
-                <div ><img class="icon" src="images/telephone.png" alt="telephone-icon"><p class="contact-info">Name2<br>8456157885</p></div>
-                <div ><img class="icon" src="images/telephone.png" alt="telephone-icon"><p class="contact-info">Name3<br>8456157895</p></div>
+                <div class="contact-click"><img class="icon" src="images/telephone.png" alt="telephone-icon"><span ><p class="contact-info-name">Name1</p><p class="contact-info-number">7456157845</p></span></div>
+                <div class="contact-click"><img class="icon" src="images/telephone.png" alt="telephone-icon"><span ><p class="contact-info-name">Name2</p><p class="contact-info-number">8845615845</p></span></div>
+                <div class="contact-click"><img class="icon" src="images/telephone.png" alt="telephone-icon"><span ><p class="contact-info-name">Name3</p><p class="contact-info-number">9456154545</p></span></div>
             </div>
             
             <div id="icon-div" class="side-border">
@@ -22,7 +27,7 @@
                 <div><input id="number-area" type="text"></div>
             </div>
             <div>
-                <table id="dialer-table">
+                <table id="dialer-table" cellspacing="0px">
                     <tr>
                         <td>1</td><td>2</td><td>3</td>
                     </tr>
@@ -33,13 +38,13 @@
                         <td>7</td><td>8</td><td>9</td>
                     </tr>
                     <tr>
-                        <td>*</td><td>0</td><td>#</td>
+                        <td id='key10'>*</td><td>0</td><td id='key12'>#</td>
                     </tr>
                 </table>
             </div>
          </div>
     </center>
-    <br><br><br><br>
+    <br><br>
 
 
 
