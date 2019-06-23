@@ -1,15 +1,20 @@
+body{
+    background-color: rgba(10, 77, 62, 0.418);
+}
+
 #btnOk{
     background-color: green;
-    position: relative;
-    top:180px;
-    right: 20px;
+    padding: 0%;
+    position: fixed;
+    right: 700px;
+
 }
 
 #btnCancel{
     background-color:red;
-    position: relative;
-    top:180px;
-    left:20px;
+    padding: 0%;
+    position: fixed;
+    right:590px;
 }
 
 #call-icon{
@@ -21,6 +26,20 @@
     top: 20%;
     right: 25%;
     bottom:8%;
+}
+
+#call-timer{
+    width: 40%;
+    font-size: 100%;
+    margin:0;
+    position: relative;
+    left: 35px;
+}
+
+#call-timer p{
+    float: left;
+    margin:0;
+    text-align: center;
 }
 
 .contact-click{
@@ -108,6 +127,12 @@
     border-bottom-right-radius: 42px;
 }
 
+#lower-button-section{
+    height: 20%;
+    position: relative;
+    top:150px;
+}
+
 .mobile-body{
     background-color: rgba(0, 0, 0, 0.459);
     color: rgba(240, 247, 242, 0.932);
@@ -141,13 +166,17 @@
 
 .resp-btn{
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
 
 .resp-info{
     font-size: 25px;
     
+}
+
+#response-container{
+    height:83%;
 }
 
 .side-border{
@@ -156,40 +185,14 @@
     border-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body{
-    background-color: rgba(10, 77, 62, 0.418);
-}
-
-
-
-#response-container{
-    height:83%;
-}
-
-
-
 #user-icon{
     width: 40%;
     height: 30%;
 }
+
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#response-container").css("display","none");
     $("#number-area").attr("disabled", "disabled");
-    $('#call-icon').removeAttr("click");
+    
 
     $('#call-icon').click(function(){
         if($('#number-area').val().length>0){
@@ -20,6 +20,12 @@ $(document).ready(function(){
         $("#dialer-container").css("display","block");
     });
 
+    $('#btnOk').click(function(){
+        $("#call-timer").css("display","block");
+
+        //setInterval(function(){},1000)
+    });
+
     $('.contact-click').click(function(){
         call();   
         var name= $(this).children('span').children('.contact-info-name').text();
@@ -31,5 +37,6 @@ $(document).ready(function(){
     function call(){
         $("#response-container").css("display","block");
         $("#dialer-container").css("display","none");
+        $("#call-timer").css("display","none");
     }
 });
